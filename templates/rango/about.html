@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+{% load staticfiles %} <!-- New line -->
+
+<html>
+
+    <head>
+        <title>About</title>
+    </head>
+
+    <body>
+        <h1>Rango says...</h1>
+        <div>
+            here is the about page! <br />
+            This tutorial has been put together by {{ yourname }}.<br />
+        </div>
+        <div>
+            <a href="/rango/index/">Index</a><br />
+            <!-- New line -->
+            <img src="{{ MEDIA_URL}}cat.jpg"
+                alt="CAT" />
+        </div>
+    </body>
+</html>
